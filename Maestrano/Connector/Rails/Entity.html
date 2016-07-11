@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class Maestrano::Connector::Rails::Entity - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="../../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../../index.html">Home</a>
+    <a href="../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/models/maestrano/connector/rails/entity.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Maestrano::Connector::Rails::EntityBase
+  
+</nav>
+
+    <!-- Included Modules -->
+<nav id="includes-section" class="section">
+  <h3 class="section-header">Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><span class="include">Maestrano::Connector::Rails::Concerns::Entity</span>
+  
+  
+  </ul>
+</nav>
+
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-creation_date_from_external_entity_hash">::creation_date_from_external_entity_hash</a>
+    
+    <li><a href="#method-c-id_from_external_entity_hash">::id_from_external_entity_hash</a>
+    
+    <li><a href="#method-c-inactive_from_external_entity_hash-3F">::inactive_from_external_entity_hash?</a>
+    
+    <li><a href="#method-c-last_update_date_from_external_entity_hash">::last_update_date_from_external_entity_hash</a>
+    
+    <li><a href="#method-i-create_external_entity">#create_external_entity</a>
+    
+    <li><a href="#method-i-get_external_entities">#get_external_entities</a>
+    
+    <li><a href="#method-i-update_external_entity">#update_external_entity</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../../README_rdoc.html">README</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../Entities.html">Entities</a>
+  
+    <li><a href="../../../Entities/Item.html">Entities::Item</a>
+  
+    <li><a href="../../../Entities/PersonAndOrganization.html">Entities::PersonAndOrganization</a>
+  
+    <li><a href="../../../Entities/SubEntities.html">Entities::SubEntities</a>
+  
+    <li><a href="../../../Entities/SubEntities/Contact.html">Entities::SubEntities::Contact</a>
+  
+    <li><a href="../../../Entities/SubEntities/Organization.html">Entities::SubEntities::Organization</a>
+  
+    <li><a href="../../../Entities/SubEntities/OrganizationMapper.html">Entities::SubEntities::OrganizationMapper</a>
+  
+    <li><a href="../../../Entities/SubEntities/Person.html">Entities::SubEntities::Person</a>
+  
+    <li><a href="../../../Entities/SubEntities/PersonMapper.html">Entities::SubEntities::PersonMapper</a>
+  
+    <li><a href="../../../Maestrano.html">Maestrano</a>
+  
+    <li><a href="../../../Maestrano/Connector.html">Maestrano::Connector</a>
+  
+    <li><a href="../../../Maestrano/Connector/Rails.html">Maestrano::Connector::Rails</a>
+  
+    <li><a href="../../../Maestrano/Connector/Rails/Entity.html">Maestrano::Connector::Rails::Entity</a>
+  
+    <li><a href="../../../Maestrano/Connector/Rails/External.html">Maestrano::Connector::Rails::External</a>
+  
+    <li><a href="../../../ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="../../../ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="../../../BaseAPIManager.html">BaseAPIManager</a>
+  
+    <li><a href="../../../BaseClient.html">BaseClient</a>
+  
+    <li><a href="../../../HomeController.html">HomeController</a>
+  
+    <li><a href="../../../ItemMapper.html">ItemMapper</a>
+  
+    <li><a href="../../../OauthController.html">OauthController</a>
+  
+    <li><a href="../../../Organization.html">Organization</a>
+  
+    <li><a href="../../../OrganizationManager.html">OrganizationManager</a>
+  
+    <li><a href="../../../QueryParamsManager.html">QueryParamsManager</a>
+  
+    <li><a href="../../../SharedEntitiesController.html">SharedEntitiesController</a>
+  
+    <li><a href="../../../SynchronizationsController.html">SynchronizationsController</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Maestrano::Connector::Rails::Entity</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-creation_date_from_external_entity_hash" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">creation_date_from_external_entity_hash</span><span
+            class="method-args">(entity)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="creation_date_from_external_entity_hash-source">
+            <pre><span class="ruby-comment"># File app/models/maestrano/connector/rails/entity.rb, line 43</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">creation_date_from_external_entity_hash</span>(<span class="ruby-identifier">entity</span>)
+  <span class="ruby-comment"># This method return the creation date from an external_entity_hash</span>
+  <span class="ruby-identifier">entity</span>[<span class="ruby-string">&#39;data&#39;</span>][<span class="ruby-string">&#39;created_at&#39;</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- creation_date_from_external_entity_hash-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- creation_date_from_external_entity_hash-method -->
+
+    
+      <div id="method-c-id_from_external_entity_hash" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">id_from_external_entity_hash</span><span
+            class="method-args">(entity)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="id_from_external_entity_hash-source">
+            <pre><span class="ruby-comment"># File app/models/maestrano/connector/rails/entity.rb, line 33</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">id_from_external_entity_hash</span>(<span class="ruby-identifier">entity</span>)
+  <span class="ruby-comment"># This method return the id from an external_entity_hash</span>
+  <span class="ruby-identifier">entity</span>[<span class="ruby-string">&#39;data&#39;</span>][<span class="ruby-string">&#39;id&#39;</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- id_from_external_entity_hash-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- id_from_external_entity_hash-method -->
+
+    
+      <div id="method-c-inactive_from_external_entity_hash-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">inactive_from_external_entity_hash?</span><span
+            class="method-args">(entity)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="inactive_from_external_entity_hash-3F-source">
+            <pre><span class="ruby-comment"># File app/models/maestrano/connector/rails/entity.rb, line 48</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">inactive_from_external_entity_hash?</span>(<span class="ruby-identifier">entity</span>)
+  <span class="ruby-comment"># This method return true if entity is inactive in the external application</span>
+  <span class="ruby-identifier">entity</span>[<span class="ruby-string">&#39;data&#39;</span>][<span class="ruby-string">&#39;customer_status&#39;</span>] <span class="ruby-operator">!=</span> <span class="ruby-string">&#39;current&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- inactive_from_external_entity_hash-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- inactive_from_external_entity_hash-3F-method -->
+
+    
+      <div id="method-c-last_update_date_from_external_entity_hash" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">last_update_date_from_external_entity_hash</span><span
+            class="method-args">(entity)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="last_update_date_from_external_entity_hash-source">
+            <pre><span class="ruby-comment"># File app/models/maestrano/connector/rails/entity.rb, line 38</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">last_update_date_from_external_entity_hash</span>(<span class="ruby-identifier">entity</span>)
+  <span class="ruby-comment"># This method return the last update date from an external_entity_hash</span>
+  <span class="ruby-identifier">entity</span>[<span class="ruby-string">&#39;data&#39;</span>][<span class="ruby-string">&#39;updated_at&#39;</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- last_update_date_from_external_entity_hash-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- last_update_date_from_external_entity_hash-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-create_external_entity" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_external_entity</span><span
+            class="method-args">(mapped_connec_entity, external_entity_name)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="create_external_entity-source">
+            <pre><span class="ruby-comment"># File app/models/maestrano/connector/rails/entity.rb, line 21</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create_external_entity</span>(<span class="ruby-identifier">mapped_connec_entity</span>, <span class="ruby-identifier">external_entity_name</span>)
+  <span class="ruby-constant">Maestrano</span><span class="ruby-operator">::</span><span class="ruby-constant">Connector</span><span class="ruby-operator">::</span><span class="ruby-constant">Rails</span><span class="ruby-operator">::</span><span class="ruby-constant">ConnectorLogger</span>.<span class="ruby-identifier">log</span>(<span class="ruby-string">&#39;info&#39;</span>, <span class="ruby-ivar">@organization</span>, <span class="ruby-node">&quot;Sending create #{external_entity_name}: #{mapped_connec_entity} to #{Maestrano::Connector::Rails::External.external_name}&quot;</span>)
+  <span class="ruby-identifier">check_external_entity_name_presence</span>(<span class="ruby-identifier">external_entity_name</span>)
+  <span class="ruby-identifier">entities</span> = <span class="ruby-constant">BaseAPIManager</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@organization</span>).<span class="ruby-identifier">create_entities</span>(<span class="ruby-identifier">mapped_connec_entity</span>, <span class="ruby-identifier">external_entity_name</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- create_external_entity-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create_external_entity-method -->
+
+    
+      <div id="method-i-get_external_entities" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_external_entities</span><span
+            class="method-args">(last_synchronization_date=nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Return an array of entities from the external app</p>
+          
+
+          
+          <div class="method-source-code" id="get_external_entities-source">
+            <pre><span class="ruby-comment"># File app/models/maestrano/connector/rails/entity.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_external_entities</span>(<span class="ruby-identifier">last_synchronization_date</span>=<span class="ruby-keyword">nil</span>)
+  <span class="ruby-constant">Maestrano</span><span class="ruby-operator">::</span><span class="ruby-constant">Connector</span><span class="ruby-operator">::</span><span class="ruby-constant">Rails</span><span class="ruby-operator">::</span><span class="ruby-constant">ConnectorLogger</span>.<span class="ruby-identifier">log</span>(<span class="ruby-string">&#39;info&#39;</span>, <span class="ruby-ivar">@organization</span>, <span class="ruby-node">&quot;Fetching #{Maestrano::Connector::Rails::External.external_name} #{self.class.external_entity_name.pluralize}&quot;</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@opts</span>[<span class="ruby-value">:full_sync</span>] <span class="ruby-operator">||</span> <span class="ruby-operator">!</span><span class="ruby-identifier">last_synchronization_date</span>
+    <span class="ruby-identifier">entity_name</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">external_entity_name</span>
+    <span class="ruby-identifier">entities</span> = <span class="ruby-constant">BaseAPIManager</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@organization</span>).<span class="ruby-identifier">get_entities</span>(<span class="ruby-identifier">entity_name</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-string">&#39;Cannot perform synchronizations less than a minute apart&#39;</span> <span class="ruby-keyword">unless</span> <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">last_synchronization_date</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span>.<span class="ruby-identifier">minute</span>
+    <span class="ruby-identifier">entity_name</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">external_entity_name</span>
+    <span class="ruby-identifier">entities</span> = <span class="ruby-constant">BaseAPIManager</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@organization</span>).<span class="ruby-identifier">get_entities</span>(<span class="ruby-identifier">entity_name</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-comment"># This method should return only entities that have been updated since the last_synchronization_date</span>
+  <span class="ruby-comment"># It should also implements an option to do a full synchronization when @opts[:full_sync] == true or when there is no last_synchronization_date</span>
+  <span class="ruby-constant">Maestrano</span><span class="ruby-operator">::</span><span class="ruby-constant">Connector</span><span class="ruby-operator">::</span><span class="ruby-constant">Rails</span><span class="ruby-operator">::</span><span class="ruby-constant">ConnectorLogger</span>.<span class="ruby-identifier">log</span>(<span class="ruby-string">&#39;info&#39;</span>, <span class="ruby-ivar">@organization</span>, <span class="ruby-node">&quot;Received data: Source=#{Maestrano::Connector::Rails::External.external_name}, Entity=#{self.class.external_entity_name}, Response=#{entities}&quot;</span>)
+  <span class="ruby-identifier">entities</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_external_entities-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_external_entities-method -->
+
+    
+      <div id="method-i-update_external_entity" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update_external_entity</span><span
+            class="method-args">(mapped_connec_entity, external_id, external_entity_name)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="update_external_entity-source">
+            <pre><span class="ruby-comment"># File app/models/maestrano/connector/rails/entity.rb, line 27</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update_external_entity</span>(<span class="ruby-identifier">mapped_connec_entity</span>, <span class="ruby-identifier">external_id</span>, <span class="ruby-identifier">external_entity_name</span>)
+  <span class="ruby-constant">Maestrano</span><span class="ruby-operator">::</span><span class="ruby-constant">Connector</span><span class="ruby-operator">::</span><span class="ruby-constant">Rails</span><span class="ruby-operator">::</span><span class="ruby-constant">ConnectorLogger</span>.<span class="ruby-identifier">log</span>(<span class="ruby-string">&#39;info&#39;</span>, <span class="ruby-ivar">@organization</span>, <span class="ruby-node">&quot;Sending update #{external_entity_name} (id=#{external_id}): #{mapped_connec_entity} to #{Maestrano::Connector::Rails::External.external_name}&quot;</span>)
+  <span class="ruby-identifier">check_external_entity_name_presence</span>(<span class="ruby-identifier">external_entity_name</span>)
+  <span class="ruby-identifier">entities</span> = <span class="ruby-constant">BaseAPIManager</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@organization</span>).<span class="ruby-identifier">update_entities</span>(<span class="ruby-identifier">mapped_connec_entity</span>, <span class="ruby-identifier">external_id</span>, <span class="ruby-identifier">external_entity_name</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update_external_entity-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update_external_entity-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

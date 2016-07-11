@@ -1,0 +1,22 @@
+Mon, 11 Jul 2016 00:37:20 +0100
+README.rdoc	Sun, 10 Jul 2016 23:52:27 +0100
+app/controllers/application_controller.rb	Sat, 09 Jul 2016 17:15:47 +0100
+app/controllers/home_controller.rb	Tue, 05 Jul 2016 19:05:39 +0100
+app/controllers/oauth_controller.rb	Mon, 11 Jul 2016 00:29:42 +0100
+app/controllers/shared_entities_controller.rb	Wed, 29 Jun 2016 18:07:03 +0100
+app/controllers/synchronizations_controller.rb	Wed, 29 Jun 2016 18:07:03 +0100
+app/helpers/application_helper.rb	Sat, 09 Jul 2016 17:15:47 +0100
+app/models/entities/item.rb	Sun, 10 Jul 2016 23:52:27 +0100
+app/models/entities/person_and_organization.rb	Sun, 10 Jul 2016 23:52:27 +0100
+app/models/entities/sub_entities/contact.rb	Mon, 11 Jul 2016 00:31:34 +0100
+app/models/entities/sub_entities/organization.rb	Mon, 11 Jul 2016 00:34:25 +0100
+app/models/entities/sub_entities/organization_mapper.rb	Sun, 10 Jul 2016 23:52:27 +0100
+app/models/entities/sub_entities/person.rb	Sun, 10 Jul 2016 23:52:27 +0100
+app/models/entities/sub_entities/person_mapper.rb	Mon, 11 Jul 2016 00:34:34 +0100
+app/models/maestrano/connector/rails/entity.rb	Sun, 10 Jul 2016 23:52:27 +0100
+app/models/maestrano/connector/rails/external.rb	Sun, 10 Jul 2016 23:52:27 +0100
+app/models/organization.rb	Sat, 09 Jul 2016 01:31:01 +0100
+app/services/base_api_manager.rb	Sun, 10 Jul 2016 23:52:27 +0100
+app/services/base_client.rb	Sun, 10 Jul 2016 23:52:27 +0100
+app/services/organization_manager.rb	Sat, 09 Jul 2016 01:31:01 +0100
+app/services/query_params_manager.rb	Sat, 09 Jul 2016 01:31:01 +0100

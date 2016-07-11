@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class Entities::SubEntities::Contact - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/models/entities/sub_entities/contact.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Maestrano::Connector::Rails::SubEntityBase
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-entity_name">::entity_name</a>
+    
+    <li><a href="#method-c-external-3F">::external?</a>
+    
+    <li><a href="#method-c-mapper_classes">::mapper_classes</a>
+    
+    <li><a href="#method-c-object_name_from_external_entity_hash">::object_name_from_external_entity_hash</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../README_rdoc.html">README</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../Entities.html">Entities</a>
+  
+    <li><a href="../../Entities/Item.html">Entities::Item</a>
+  
+    <li><a href="../../Entities/PersonAndOrganization.html">Entities::PersonAndOrganization</a>
+  
+    <li><a href="../../Entities/SubEntities.html">Entities::SubEntities</a>
+  
+    <li><a href="../../Entities/SubEntities/Contact.html">Entities::SubEntities::Contact</a>
+  
+    <li><a href="../../Entities/SubEntities/Organization.html">Entities::SubEntities::Organization</a>
+  
+    <li><a href="../../Entities/SubEntities/OrganizationMapper.html">Entities::SubEntities::OrganizationMapper</a>
+  
+    <li><a href="../../Entities/SubEntities/Person.html">Entities::SubEntities::Person</a>
+  
+    <li><a href="../../Entities/SubEntities/PersonMapper.html">Entities::SubEntities::PersonMapper</a>
+  
+    <li><a href="../../Maestrano.html">Maestrano</a>
+  
+    <li><a href="../../Maestrano/Connector.html">Maestrano::Connector</a>
+  
+    <li><a href="../../Maestrano/Connector/Rails.html">Maestrano::Connector::Rails</a>
+  
+    <li><a href="../../Maestrano/Connector/Rails/Entity.html">Maestrano::Connector::Rails::Entity</a>
+  
+    <li><a href="../../Maestrano/Connector/Rails/External.html">Maestrano::Connector::Rails::External</a>
+  
+    <li><a href="../../ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="../../ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="../../BaseAPIManager.html">BaseAPIManager</a>
+  
+    <li><a href="../../BaseClient.html">BaseClient</a>
+  
+    <li><a href="../../HomeController.html">HomeController</a>
+  
+    <li><a href="../../ItemMapper.html">ItemMapper</a>
+  
+    <li><a href="../../OauthController.html">OauthController</a>
+  
+    <li><a href="../../Organization.html">Organization</a>
+  
+    <li><a href="../../OrganizationManager.html">OrganizationManager</a>
+  
+    <li><a href="../../QueryParamsManager.html">QueryParamsManager</a>
+  
+    <li><a href="../../SharedEntitiesController.html">SharedEntitiesController</a>
+  
+    <li><a href="../../SynchronizationsController.html">SynchronizationsController</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Entities::SubEntities::Contact</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-entity_name" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">entity_name</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="entity_name-source">
+            <pre><span class="ruby-comment"># File app/models/entities/sub_entities/contact.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">entity_name</span>
+  <span class="ruby-string">&#39;Contact&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- entity_name-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- entity_name-method -->
+
+    
+      <div id="method-c-external-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">external?</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="external-3F-source">
+            <pre><span class="ruby-comment"># File app/models/entities/sub_entities/contact.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">external?</span>
+  <span class="ruby-keyword">true</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- external-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- external-3F-method -->
+
+    
+      <div id="method-c-mapper_classes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">mapper_classes</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="mapper_classes-source">
+            <pre><span class="ruby-comment"># File app/models/entities/sub_entities/contact.rb, line 11</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">mapper_classes</span>
+  {
+    <span class="ruby-string">&#39;Person&#39;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Entities</span><span class="ruby-operator">::</span><span class="ruby-constant">SubEntities</span><span class="ruby-operator">::</span><span class="ruby-constant">PersonMapper</span>,
+    <span class="ruby-string">&#39;Organization&#39;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Entities</span><span class="ruby-operator">::</span><span class="ruby-constant">SubEntities</span><span class="ruby-operator">::</span><span class="ruby-constant">OrganizationMapper</span>
+  }
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- mapper_classes-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- mapper_classes-method -->
+
+    
+      <div id="method-c-object_name_from_external_entity_hash" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">object_name_from_external_entity_hash</span><span
+            class="method-args">(entity)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>The name is chosen conditionally. Companies have the mandatory field name,
+while People can just have first_name and/or last_name</p>
+          
+
+          
+          <div class="method-source-code" id="object_name_from_external_entity_hash-source">
+            <pre><span class="ruby-comment"># File app/models/entities/sub_entities/contact.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">object_name_from_external_entity_hash</span>(<span class="ruby-identifier">entity</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">entity</span>[<span class="ruby-string">&#39;data&#39;</span>][<span class="ruby-string">&#39;is_organization&#39;</span>]
+    <span class="ruby-node">&quot;#{entity[&#39;data&#39;][&#39;name&#39;]}&quot;</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-node">&quot;#{entity[&#39;data&#39;][&#39;first_name&#39;]} #{entity[&#39;data&#39;][&#39;last_name&#39;]}&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- object_name_from_external_entity_hash-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- object_name_from_external_entity_hash-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class OauthController - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/oauth_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ApplicationController.html">ApplicationController</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-create_omniauth">#create_omniauth</a>
+    
+    <li><a href="#method-i-destroy_omniauth">#destroy_omniauth</a>
+    
+    <li><a href="#method-i-request_omniauth">#request_omniauth</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./README_rdoc.html">README</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Entities.html">Entities</a>
+  
+    <li><a href="./Entities/Item.html">Entities::Item</a>
+  
+    <li><a href="./Entities/PersonAndOrganization.html">Entities::PersonAndOrganization</a>
+  
+    <li><a href="./Entities/SubEntities.html">Entities::SubEntities</a>
+  
+    <li><a href="./Entities/SubEntities/Contact.html">Entities::SubEntities::Contact</a>
+  
+    <li><a href="./Entities/SubEntities/Organization.html">Entities::SubEntities::Organization</a>
+  
+    <li><a href="./Entities/SubEntities/OrganizationMapper.html">Entities::SubEntities::OrganizationMapper</a>
+  
+    <li><a href="./Entities/SubEntities/Person.html">Entities::SubEntities::Person</a>
+  
+    <li><a href="./Entities/SubEntities/PersonMapper.html">Entities::SubEntities::PersonMapper</a>
+  
+    <li><a href="./Maestrano.html">Maestrano</a>
+  
+    <li><a href="./Maestrano/Connector.html">Maestrano::Connector</a>
+  
+    <li><a href="./Maestrano/Connector/Rails.html">Maestrano::Connector::Rails</a>
+  
+    <li><a href="./Maestrano/Connector/Rails/Entity.html">Maestrano::Connector::Rails::Entity</a>
+  
+    <li><a href="./Maestrano/Connector/Rails/External.html">Maestrano::Connector::Rails::External</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BaseAPIManager.html">BaseAPIManager</a>
+  
+    <li><a href="./BaseClient.html">BaseClient</a>
+  
+    <li><a href="./HomeController.html">HomeController</a>
+  
+    <li><a href="./ItemMapper.html">ItemMapper</a>
+  
+    <li><a href="./OauthController.html">OauthController</a>
+  
+    <li><a href="./Organization.html">Organization</a>
+  
+    <li><a href="./OrganizationManager.html">OrganizationManager</a>
+  
+    <li><a href="./QueryParamsManager.html">QueryParamsManager</a>
+  
+    <li><a href="./SharedEntitiesController.html">SharedEntitiesController</a>
+  
+    <li><a href="./SynchronizationsController.html">SynchronizationsController</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class OauthController</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-create_omniauth" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_omniauth</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a href="BaseClient.html#method-c-obtain_token">BaseClient.obtain_token</a>
+is used to create a client with the callback URI set to redirect to the <a
+href="OauthController.html#method-i-create_omniauth">create_omniauth</a>
+action. The <a href="OrganizationManager.html">OrganizationManager</a>
+service is then used to obtain the token.</p>
+          
+
+          
+          <div class="method-source-code" id="create_omniauth-source">
+            <pre><span class="ruby-comment"># File app/controllers/oauth_controller.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create_omniauth</span>
+  <span class="ruby-identifier">org_uid</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">:state</span>]
+  <span class="ruby-identifier">organization</span> = <span class="ruby-constant">Organization</span>.<span class="ruby-identifier">find_by_uid_and_tenant</span>(<span class="ruby-identifier">org_uid</span>, <span class="ruby-identifier">current_user</span>.<span class="ruby-identifier">tenant</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">organization</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">is_admin?</span>(<span class="ruby-identifier">current_user</span>, <span class="ruby-identifier">organization</span>)
+    <span class="ruby-identifier">client</span> = <span class="ruby-constant">BaseClient</span>.<span class="ruby-identifier">obtain_token</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:code</span>].<span class="ruby-identifier">present?</span>
+      <span class="ruby-identifier">token</span> = <span class="ruby-identifier">client</span>.<span class="ruby-identifier">auth_code</span>.<span class="ruby-identifier">get_token</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:code</span>], <span class="ruby-identifier">redirect_uri</span><span class="ruby-operator">:</span> <span class="ruby-constant">BaseClient</span><span class="ruby-operator">::</span><span class="ruby-constant">RED_URI</span>)
+      <span class="ruby-identifier">manager</span> = <span class="ruby-constant">OrganizationManager</span>.<span class="ruby-identifier">update</span>(<span class="ruby-identifier">organization</span>, <span class="ruby-identifier">token</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">root_url</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- create_omniauth-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create_omniauth-method -->
+
+    
+      <div id="method-i-destroy_omniauth" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">destroy_omniauth</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="destroy_omniauth-source">
+            <pre><span class="ruby-comment"># File app/controllers/oauth_controller.rb, line 32</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">destroy_omniauth</span>
+  <span class="ruby-identifier">organization</span> = <span class="ruby-constant">Organization</span>.<span class="ruby-identifier">find_by_id</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:organization_id</span>])
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">organization</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">is_admin?</span>(<span class="ruby-identifier">current_user</span>, <span class="ruby-identifier">organization</span>)
+    <span class="ruby-identifier">organization</span>.<span class="ruby-identifier">revoke_omniauth</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">root_url</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- destroy_omniauth-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- destroy_omniauth-method -->
+
+    
+      <div id="method-i-request_omniauth" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">request_omniauth</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a href="BaseClient.html#method-c-authorize">BaseClient.authorize</a>
+instantiates a new BaseCRM::Client instance and queries the API to obtain
+an authorization code.</p>
+          
+
+          
+          <div class="method-source-code" id="request_omniauth-source">
+            <pre><span class="ruby-comment"># File app/controllers/oauth_controller.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">request_omniauth</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">is_admin</span>
+    <span class="ruby-identifier">auth_params</span> = {
+      <span class="ruby-identifier">state</span><span class="ruby-operator">:</span> <span class="ruby-identifier">current_organization</span>.<span class="ruby-identifier">uid</span>
+    }
+    <span class="ruby-identifier">client</span> = <span class="ruby-constant">BaseClient</span>.<span class="ruby-identifier">authorize</span>(<span class="ruby-constant">QueryParamsManager</span>.<span class="ruby-identifier">query_params</span>(<span class="ruby-identifier">auth_params</span>))
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">client</span>.<span class="ruby-identifier">auth_code</span>.<span class="ruby-identifier">authorize_url</span>(<span class="ruby-identifier">redirect_uri</span><span class="ruby-operator">:</span> <span class="ruby-constant">BaseClient</span><span class="ruby-operator">::</span><span class="ruby-constant">RED_URI</span> )
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">root_url</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- request_omniauth-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- request_omniauth-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class BaseAPIManager - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/services/base_api_manager.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-i-create_entities">#create_entities</a>
+    
+    <li><a href="#method-i-get_entities">#get_entities</a>
+    
+    <li><a href="#method-i-update_entities">#update_entities</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./README_rdoc.html">README</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Entities.html">Entities</a>
+  
+    <li><a href="./Entities/Item.html">Entities::Item</a>
+  
+    <li><a href="./Entities/PersonAndOrganization.html">Entities::PersonAndOrganization</a>
+  
+    <li><a href="./Entities/SubEntities.html">Entities::SubEntities</a>
+  
+    <li><a href="./Entities/SubEntities/Contact.html">Entities::SubEntities::Contact</a>
+  
+    <li><a href="./Entities/SubEntities/Organization.html">Entities::SubEntities::Organization</a>
+  
+    <li><a href="./Entities/SubEntities/OrganizationMapper.html">Entities::SubEntities::OrganizationMapper</a>
+  
+    <li><a href="./Entities/SubEntities/Person.html">Entities::SubEntities::Person</a>
+  
+    <li><a href="./Entities/SubEntities/PersonMapper.html">Entities::SubEntities::PersonMapper</a>
+  
+    <li><a href="./Maestrano.html">Maestrano</a>
+  
+    <li><a href="./Maestrano/Connector.html">Maestrano::Connector</a>
+  
+    <li><a href="./Maestrano/Connector/Rails.html">Maestrano::Connector::Rails</a>
+  
+    <li><a href="./Maestrano/Connector/Rails/Entity.html">Maestrano::Connector::Rails::Entity</a>
+  
+    <li><a href="./Maestrano/Connector/Rails/External.html">Maestrano::Connector::Rails::External</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BaseAPIManager.html">BaseAPIManager</a>
+  
+    <li><a href="./BaseClient.html">BaseClient</a>
+  
+    <li><a href="./HomeController.html">HomeController</a>
+  
+    <li><a href="./ItemMapper.html">ItemMapper</a>
+  
+    <li><a href="./OauthController.html">OauthController</a>
+  
+    <li><a href="./Organization.html">Organization</a>
+  
+    <li><a href="./OrganizationManager.html">OrganizationManager</a>
+  
+    <li><a href="./QueryParamsManager.html">QueryParamsManager</a>
+  
+    <li><a href="./SharedEntitiesController.html">SharedEntitiesController</a>
+  
+    <li><a href="./SynchronizationsController.html">SynchronizationsController</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class BaseAPIManager</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(organization = "default")</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File app/services/base_api_manager.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">organization</span> = <span class="ruby-string">&quot;default&quot;</span>)
+  <span class="ruby-ivar">@organization</span> = <span class="ruby-identifier">organization</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-create_entities" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_entities</span><span
+            class="method-args">(mapped_connec_entity, external_entity_name)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>creates an entity with the parameters passed</p>
+          
+
+          
+          <div class="method-source-code" id="create_entities-source">
+            <pre><span class="ruby-comment"># File app/services/base_api_manager.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create_entities</span>(<span class="ruby-identifier">mapped_connec_entity</span>, <span class="ruby-identifier">external_entity_name</span>)
+  <span class="ruby-identifier">headers</span> = {
+    <span class="ruby-string">&quot;Accept&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;application/json&quot;</span>,
+    <span class="ruby-string">&quot;Content-Type&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;application/json&quot;</span>,
+    <span class="ruby-string">&quot;Authorization&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;Bearer #{organization.oauth_token}&quot;</span>
+  }
+
+  <span class="ruby-identifier">body</span> = <span class="ruby-identifier">mapped_connec_entity</span>
+
+  <span class="ruby-identifier">response</span> = <span class="ruby-constant">RestClient</span><span class="ruby-operator">::</span><span class="ruby-constant">Request</span>.<span class="ruby-identifier">execute</span> <span class="ruby-identifier">method</span><span class="ruby-operator">:</span> <span class="ruby-value">:post</span>, <span class="ruby-identifier">url</span><span class="ruby-operator">:</span> <span class="ruby-node">&quot;https://api.getbase.com/v2/#{external_entity_name.downcase.pluralize}&quot;</span>,
+                                                 <span class="ruby-identifier">payload</span><span class="ruby-operator">:</span> <span class="ruby-identifier">body</span>, <span class="ruby-identifier">headers</span><span class="ruby-operator">:</span> <span class="ruby-identifier">headers</span>
+  <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">logger</span>.<span class="ruby-identifier">debug</span> {<span class="ruby-node">&quot;Creating entity #{external_entity_name}, Response: #{response}&quot;</span>}
+  <span class="ruby-identifier">response</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- create_entities-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create_entities-method -->
+
+    
+      <div id="method-i-get_entities" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_entities</span><span
+            class="method-args">(entity_name = "")</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Fetches all the resources for the specific entity</p>
+          
+
+          
+          <div class="method-source-code" id="get_entities-source">
+            <pre><span class="ruby-comment"># File app/services/base_api_manager.rb, line 10</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_entities</span>(<span class="ruby-identifier">entity_name</span> = <span class="ruby-string">&quot;&quot;</span>)
+  <span class="ruby-identifier">headers</span> = {
+    <span class="ruby-string">&quot;Accept&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;application/json&quot;</span>,
+    <span class="ruby-string">&quot;Authorization&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;Bearer #{organization.oauth_token}&quot;</span>
+  }
+<span class="ruby-identifier">response</span> = <span class="ruby-constant">RestClient</span><span class="ruby-operator">::</span><span class="ruby-constant">Request</span>.<span class="ruby-identifier">execute</span> <span class="ruby-identifier">method</span><span class="ruby-operator">:</span> <span class="ruby-value">:get</span>, <span class="ruby-identifier">url</span><span class="ruby-operator">:</span> <span class="ruby-node">&quot;https://api.getbase.com/v2/#{entity_name.downcase.pluralize}&quot;</span>, <span class="ruby-identifier">headers</span><span class="ruby-operator">:</span> <span class="ruby-identifier">headers</span>
+<span class="ruby-constant">JSON</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">response</span>)[<span class="ruby-string">&#39;items&#39;</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_entities-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_entities-method -->
+
+    
+      <div id="method-i-update_entities" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update_entities</span><span
+            class="method-args">(mapped_connec_entity, external_id, external_entity_name)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>updates an existing entity with the parameters provided</p>
+          
+
+          
+          <div class="method-source-code" id="update_entities-source">
+            <pre><span class="ruby-comment"># File app/services/base_api_manager.rb, line 36</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update_entities</span>(<span class="ruby-identifier">mapped_connec_entity</span>, <span class="ruby-identifier">external_id</span>, <span class="ruby-identifier">external_entity_name</span>)
+  <span class="ruby-identifier">headers</span> = {
+    <span class="ruby-string">&quot;Accept&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;application/json&quot;</span>,
+    <span class="ruby-string">&quot;Content-Type&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;application/json&quot;</span>,
+    <span class="ruby-string">&quot;Authorization&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;Bearer #{organization.oauth_token}&quot;</span>
+  }
+
+  <span class="ruby-identifier">body</span> = <span class="ruby-identifier">mapped_connec_entity</span>
+
+  <span class="ruby-identifier">response</span> = <span class="ruby-constant">RestClient</span><span class="ruby-operator">::</span><span class="ruby-constant">Request</span>.<span class="ruby-identifier">execute</span> <span class="ruby-identifier">method</span><span class="ruby-operator">:</span> <span class="ruby-value">:put</span>, <span class="ruby-identifier">url</span><span class="ruby-operator">:</span> <span class="ruby-node">&quot;https://api.getbase.com/v2/#{external_entity_name.downcase.pluralize}/#{external_id}&quot;</span>,
+                                                 <span class="ruby-identifier">payload</span><span class="ruby-operator">:</span> <span class="ruby-identifier">body</span>, <span class="ruby-identifier">headers</span><span class="ruby-operator">:</span> <span class="ruby-identifier">headers</span>
+  <span class="ruby-constant">Rails</span>.<span class="ruby-identifier">logger</span>.<span class="ruby-identifier">debug</span> {<span class="ruby-node">&quot;Creating entity #{external_entity_name}, Response: #{response}&quot;</span>}
+  <span class="ruby-identifier">response</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update_entities-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update_entities-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
